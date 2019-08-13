@@ -1,0 +1,16 @@
+@import "../../styles/typography";
+
+.thumbnail {
+  position: relative;
+  line-height: 0;
+  height: 100%;
+  &__text {
+    @include TitleThumbnail;
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1rem;
+  }
+  &__image {
+    max-height: 25rem;
+  }
+}

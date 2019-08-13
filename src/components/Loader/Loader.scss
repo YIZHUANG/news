@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.loader {
+  height: 0;
+  width: 0;
+  padding: 1rem;
+  border: 1px solid $main-pink;
+  border-right-color: $main-white;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

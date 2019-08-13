@@ -1,0 +1,8 @@
+@import "../../styles/typography";
+@import "../../styles/components";
+
+.channel-tag {
+  @include Body;
+  @include hover-support;
+  text-decoration: underline;
+}

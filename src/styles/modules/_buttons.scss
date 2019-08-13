@@ -1,0 +1,34 @@
+@mixin hover {
+  cursor: pointer;
+}
+@mixin hover-support {
+  @include hover;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+@mixin hover-pimary {
+  &:hover {
+    color: $main-white;
+    background: $main-pink;
+  }
+}
+@mixin hover-outline {
+  &:hover {
+    color: $main-white;
+    border: 0.5px solid $main-pink;
+  }
+}
+@mixin rounded-button {
+  background: none;
+  margin: 0.5rem;
+  font-family: $Helvetica-Neue-Regular;
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border: 0.5px solid transparent;
+  color: $main-white;
+  border-radius: 1.5rem;
+  outline: 0;
+  cursor: pointer;
+  transition: background 0.5s;
+}

@@ -1,0 +1,16 @@
+@import "../../styles/components";
+@import "../../styles/typography";
+
+.button {
+  @include rounded-button;
+  font-family: $Helvetica-Neue-Regular;
+  font-size: $font-size-x;
+  color: $main-grey;
+  &--transparent {
+    @include hover-outline;
+  }
+  &--filled {
+    color: $main-white;
+    background: $main-pink;
+  }
+}

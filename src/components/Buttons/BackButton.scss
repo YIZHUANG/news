@@ -1,0 +1,13 @@
+@import "../../styles/components";
+
+.back-button {
+  @include hover-support;
+  background: none;
+  outline: none;
+  border: none;
+  &__arrow {
+    height: 2rem;
+    width: 2rem;
+    transform: rotate(180deg);
+  }
+}

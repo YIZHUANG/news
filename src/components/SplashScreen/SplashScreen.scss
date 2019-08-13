@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.splash-screen {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../../static/bg.png");
+  &__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &__brand-container {
+    margin-bottom: 5rem;
+  }
+  &__app-name {
+    font-family: $Helvetica-Neue-Bold;
+    color: $main-white;
+  }
+}

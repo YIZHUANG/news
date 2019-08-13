@@ -1,0 +1,21 @@
+@import "../../styles/typography";
+@import "../../styles/medias";
+
+.article-banner {
+  position: relative;
+  line-height: 0;
+  height: 100%;
+  &__text {
+    @include TitleChannel;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 2rem;
+    line-height: 2rem;
+    @include desktop {
+      left: 8rem;
+    }
+  }
+  &__image {
+    max-height: 30rem;
+  }
+}

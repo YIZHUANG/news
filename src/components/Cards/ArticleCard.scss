@@ -1,0 +1,18 @@
+@import "../../styles/typography";
+@import "../../styles/medias";
+
+.article-card {
+  text-decoration: none;
+  color: inherit;
+  background: none;
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    @include BodyBold;
+    @include desktop {
+      font-size: $font-size-xx-large;
+    }
+  }
+}

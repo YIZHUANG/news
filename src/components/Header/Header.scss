@@ -1,0 +1,29 @@
+@import "../../styles/variables";
+
+$top: 65%;
+
+.header {
+  position: relative;
+  height: 4rem;
+  background-color: $main-purple;
+  &__back-button {
+    position: absolute;
+    top: $top;
+    left: 1rem;
+    transform: translateY(-50%);
+  }
+  &__title {
+    position: absolute;
+    top: $top;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &-text {
+      font-family: $Helvetica-Neue-Bold;
+      color: $main-white;
+    }
+  }
+  &__logo {
+    width: 3rem;
+    height: 2rem;
+  }
+}

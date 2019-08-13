@@ -1,0 +1,28 @@
+{
+  "presets": [
+    [
+      "next/babel",
+      {
+        "preset-env": {
+          "useBuiltIns": "usage"
+        }
+      }
+    ],
+    "@zeit/next-typescript/babel"
+  ],
+  "plugins": [
+    "@babel/syntax-dynamic-import",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "@root": "./src",
+          "@api": "./src/api",
+          "@modules": "./src/modules",
+          "@components": "./src/components",
+          "@utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}
